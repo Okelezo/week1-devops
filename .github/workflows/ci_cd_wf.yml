@@ -29,10 +29,10 @@ jobs:
           python -m pytest -v tests
       
       - name: Test with pytest
-        run: pytest --cov=[week1-devops]
+        run: pytest --cov=src
 
       - name: Generate coverage report
-        run: pytest --cov=[week1-devops] --cov-report=xml
+        run: pytest --cov=src --cov-report=xml
       
       
       
